@@ -1,0 +1,41 @@
+﻿<h3>{{formHeading}}</h3>
+<br/><br /><br />
+<div class="card">
+    <div class="card-body">
+        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+            <div class="row">
+                <label class="col-md-2 form-control-label" for="text-input">First Name</label>
+                <div class="col-md-3">
+                    <input type="text" id="text-input" name="text-input" class="form-control" placeholder="First Name" [(ngModel)]="firstName">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-md-2 form-control-label" for="text-input">Last Name</label>
+                <div class="col-md-3">
+                    <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Last Name" [(ngModel)]="lastName">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <label class="col-md-2 form-control-label" for="text-input">Designation</label>
+                <div class="col-md-3">
+                    <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Designation" [(ngModel)]="designation">
+                </div>
+            </div>
+        </form>
+    </div>
+    <br/>
+    <div class="card-footer">
+        <div class="row">
+            <label class="col-md-2 form-control-label" for="text-input"></label>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-sm btn-primary" (click)="createEMployee()"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                    <button type="reset" class="btn btn-sm btn-danger" (click)="reset()"><i class="fa fa-ban"></i> Reset</button>
+                </div>
+            </div>
+    </div>
+    <h4>{{status}}</h4>
+</div>
+

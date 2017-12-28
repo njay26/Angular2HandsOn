@@ -1,0 +1,32 @@
+﻿<h3>{{formHeading}}</h3>
+<br /><br /><br />
+<div class="card">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Designation</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.FirstName}}</td>
+                <td>{{employee.LastName}}</td>
+                <td>{{employee.Designation}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link">Prev</a></li>
+        <li class="page-item active">
+            <a class="page-link">1</a>
+        </li>
+        <li class="page-item"><a class="page-link">2</a></li>
+        <li class="page-item"><a class="page-link">3</a></li>
+        <li class="page-item"><a class="page-link">4</a></li>
+        <li class="page-item"><a class="page-link">Next</a></li>
+    </ul>
+
+</div>
+<button (click)="listComponentLoad()">Pass event to parent component!</button>

@@ -1,0 +1,1 @@
+F:\Projects\Angular2\Angular2HandsOn\EmployeeManagement\obj\Debug\EmployeeManagement.csprojResolveAssemblyReference.cache

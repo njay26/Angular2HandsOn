@@ -1,0 +1,11 @@
+﻿<div class="container">
+    <ul class="nav nav-tabs">
+        <li [class]="activeEmployeeRegistrationTab" (click)="activateEmployeeRegistrationTab()"><a>Employee Registration</a></li>
+        <li [class]="activeEmployeeListTab" (click)="activateEmployeeListTab()"><a>Employee List</a></li>
+    </ul>
+    <br>
+   
+     <div *ngIf="activeEmployeeRegistrationTab"><employee-register [formHeading]="'Employee Registration'"></employee-register></div>
+    <div *ngIf="activeEmployeeListTab"><list-employee [formHeading]="'Employee List'" (textChangeForTitle)="alertMessage($event)"></list-employee></div>
+  
+</div>
